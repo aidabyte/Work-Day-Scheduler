@@ -18,6 +18,12 @@
 // <!-- I did Psuedo code with Agnes, Olivia, and Jake. -->
 
 
+var timeNow = moment().format('MMMM Do YYYY, h:mm:ss a');
+var idList = ["9am", "10am", "11am", "12pm", "1pm","2pm","3pm","4pm","5pm"]
+
 $( document ).ready(function() {
-    console.log( "ready!" );
+
 });
+
+
+
