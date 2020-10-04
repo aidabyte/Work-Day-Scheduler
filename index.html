@@ -15,6 +15,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </link>
   
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     
@@ -37,95 +38,92 @@
       <p id="currentDay" class="lead"></p>
       <!-- This is the moment.js time/date -->
       <!-- site from youtube https://www.youtube.com/watch?v=iDGSVzEwa7A&feature=share -->
-      <script type="text/javascript">
+
+      <!-- <script type="text/javascript">
         var timeNow = moment().format('MMMM Do YYYY, h:mm:ss a');
         var x = document.getElementById("currentDay");
         x.innerHTML = timeNow;
-      </script>
+      </script> -->
 
    </header>
     
       <!-- Timeblocks go here -->
       <!-- Used bootstrap for grid below -->
-      <div class="container">
+      <div class="container planner">
+        <!-- class=row is from bootstrap, time-block from css -->
         <div class="row time-block" id="9am">
+          <!-- col md is the side of column -->
           <div class="col-md-1 hour">
             9AM</div>
             <!-- text area tag referenced from w3 schools -->
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+                        <!-- btn from bootstrap and saveBtn from css -->
+          <button class="btn saveBtn col-md-1" input-time ="9" type="submit"><i class="fa fa-calendar-check-o"></i></button>
           <div class=" row time-block" id="10am">
           </div>
           <div class="col-md-1 hour">
             10AM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="10" type="submit"><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="11am">
           </div>
           <div class="col-md-1 hour">
             11AM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="11" ><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="12PM">
           </div>
           <div class="col-md-1 hour">
             12PM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="12" type="submit"><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block">
           </div>
           <div class="col-md-1 hour">
             1PM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="1" type="submit"><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="1pm">
           </div>
           <div class="col-md-1 hour">
             2PM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="2" type="submit"><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="2pm">
           </div>
           <div class="col-md-1 hour">
             3PM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="3" type="submit"><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="3pm">
           </div>
           <div class="col-md-1 hour">
             4PM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="4" ><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="4pm">
           </div>
           <div class="col-md-1 hour">
             5PM</div>
-          <textarea class="col-md-10">
+          <textarea class="col-md-10 description">
                         </textarea>
-          <button class="btn saveBtn col-md-1" type="submit">Button</button>
+          <button class="btn saveBtn col-md-1" input-time ="5" ><i class="fa fa-calendar-check-o"></i></button>
           <div class="row time-block" id="5pm">
           </div>
       
         </div>
       </div>
 
-          
-        
-  
-
-  
-
-
    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   
    
   </body>
 </html>
