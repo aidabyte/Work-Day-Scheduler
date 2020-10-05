@@ -1,20 +1,20 @@
 var currentDate = ("#currentDay")
 var userInputArray = []
 var time = (".input-time")
+var currentHour = moment().hours();
 
 // making sure that jquery is working
+// https://learn.jquery.com/using-jquery-core/document-ready/
 $(document).ready(function() {
-    $(".saveBtn").on("click", function() {
+        $( ".saveBtn" ).click(function() {
 
         var value = $(this)
-        .siblings(".description")
+        // children of each element in the set of matched elements
+        .children(".description")
         .val();
 
         var time = $(this).attr("input-time");
-        var hour = moment().hour();
-
-        localStorage.setItem(time,value);
-        
+        var hour = moment().hour();  
     });
     //date,time, and updating seconds every one thousand miliseconds
     $("currentDay").text(moment());
@@ -30,26 +30,29 @@ $(document).ready(function() {
 
     userInputArray = [];
 for( let i = 9; i < userInputArray.length; i ++){
-    userInputArray.push(
-        moment()
-        .hour(i)
-        .format("h, a")
+    userInputArray.push( moment().hour(i) .format("h, a")
     );
 
 }
 
-
-function changeBackgroundColors() {
-    var currentHour = moment().hours();
+function changeColors() {
+    
+        currentHour = moment().hours();
     $(".time-block").each(function() {
         var currentIdTime = $(this).attr("id")
 
-        if (currentHour < currentIdTime)
-      
-}
+        if (currentHour > currentIdTime){
+            $(this).addClass("past");
+        } else if (currentIdTime === currentHour) {
+            $(this).removeClass("past");
+        }
+        });
+      }
+
+      changeColors();
 
 
+ 
 
+    
 
-// localStorage.setItem(time, text);
-// $("#9am .description").val(localStorage.getItem("9"));
