@@ -37,22 +37,4 @@ for( let i = 9; i < userInputArray.length; i ++){
 
 function changeColors() {
     
-        currentHour = moment().hours();
-    $(".time-block").each(function() {
-        var currentIdTime = $(this).attr("id")
-
-        if (currentHour > currentIdTime){
-            $(this).addClass("past");
-        } else if (currentIdTime === currentHour) {
-            $(this).removeClass("past");
-        }
-        });
-      }
-
-      changeColors();
-
-
- 
-
-    
-
+}
