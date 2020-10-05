@@ -14,7 +14,7 @@
  A calender application that allows a user to save events for each hour of the day. This app will run in the browser and will be updated in HTML and CSS powered by jQuery,moment.js, and bootsrap.
 
   ## Screenshots
- ![Example screenshot]()
+ ![Example screenshot](Screen Shot 2020-10-04 at 10.31.42 PM.png)
 
   ## Setup
 
