@@ -37,3 +37,19 @@ for( let i = 9; i < userInputArray.length; i ++){
     );
 
 }
+
+
+function changeBackgroundColors() {
+    var currentHour = moment().hours();
+    $(".time-block").each(function() {
+        var currentIdTime = $(this).attr("id")
+
+        if (currentHour < currentIdTime)
+      
+}
+
+
+
+
+// localStorage.setItem(time, text);
+// $("#9am .description").val(localStorage.getItem("9"));
